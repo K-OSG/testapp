@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+    {% block content %}
+    <h1>{{ message }}</h1>
+    <table class="als-table col5t">
+        <thead>
+          <tr>
+            <th>Labor date</th>
+            <th>Monthly Working days</th>
+            <th>Monthly working hours</th>
+            <th>Average working hours</th>
+            <th>Monthly overtime hours</th>
+            <th>Average overtime hours</th>
+            <th>Overtime hours ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          {% for r in result_t %}
+            <th>{{ r }}</th>
+          {% endfor %}
+          </tr>
+          <tr>
+          {% for r in result_1 %}
+            <th>{{ r }}</th>
+          {% endfor %}
+          </tr>
+          <tr>
+            {% for r in result_2 %}
+              <th>{{ r }}</th>
+            {% endfor %}
+          </tr>
+          <tr>
+            {% for r in result_3 %}
+              <th>{{ r }}</th>
+            {% endfor %}
+          </tr>
+          <tr>
+            {% for r in result_4 %}
+              <th>{{ r }}</th>
+            {% endfor %}
+          </tr>
+          <tr>
+            {% for r in result_5 %}
+              <th>{{ r }}</th>
+            {% endfor %}
+          </tr>
+        </tbody>
+    </table>
+    <a href="/" class="btn-push-top">Return to the top page</a>
+    <a href="/analysis/graph" class="btn-push-graph">Save graph</a>
+    {% endblock %}

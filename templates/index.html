@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+    {% block content %}
+    <div class="main-upper">
+      <div>Time of Day</div>
+      <div >{{message[2]}}/{{message[3]}}/{{message[4]}}</div>
+      <div id="RealtimeClockArea">Now loading...</div>
+    </div>
+    <div>
+        <a href="/syusya" class="btn-push">Punch In</a>
+        <a href="/taisya" class="btn-push">Punch Out</a>
+      </div>
+      <div class="main-center">
+        <div class="center-left">
+          <ul>
+            <li>Attendance list</li>
+            {% for i in result %}
+            <li class="data">{{i[0]}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="center-right">
+          <div>
+            <ul class="up">
+              <li>Total Working Hours</li>
+              <li class="t-data">{{result2}}</li>
+            </ul> 
+          </div>
+          <div>
+            <ul class="row">
+              <li>Total Overtime ours</li>
+              <li class="t-data">{{result3}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class= "main-under">
+      <a href="/output" class="btn-push-row">File Output</a>
+      <a href="/analysis" class="btn-push-row">Data Analysis</a>
+    </div>
+
+        <!-- js/script.jsの読み込み -->
+        <script src="static/js/script.js"></script>
+        
+    {% endblock %}

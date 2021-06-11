@@ -1,0 +1,1 @@
+web: gunicorn time_card:app --log-file=-
