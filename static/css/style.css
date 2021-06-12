@@ -29,6 +29,8 @@ ul,li {
   font-size: 40px;
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .btn-push {
@@ -43,6 +45,7 @@ ul,li {
   padding: 10px 24px;
   border-radius: 10px;
   border-bottom: 7px solid #d37800;
+  margin: 20px;
 }
 
 .btn-push:active {
@@ -53,7 +56,7 @@ ul,li {
 .main-center {
   display: flex;
   justify-content: space-around;
-  margin: 30px;
+  margin: 50px;
 }
 
 ul {
@@ -115,6 +118,7 @@ ul li{
   padding: 10px 24px;
   border-radius: 10px;
   border-bottom: 7px solid #d37800;
+  margin-left: 80px;
 }
 
 .btn-push-row:active {
@@ -128,6 +132,7 @@ ul li{
     border: none !important;
     border-collapse: separate;
     border-spacing: 7px 0px;
+    margin-top: 60px;
    }
     
    .als-table th {
@@ -242,7 +247,7 @@ ul li{
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 100px;
   padding: 10px 24px;
   border-radius: 10px;
   border-bottom: 7px solid #1887d1;
@@ -266,6 +271,7 @@ ul li{
     padding: 10px 24px;
     border-radius: 10px;
     border-bottom: 7px solid #b8ad52;
+    margin-left: 100px;
   }
   
   .btn-push-graph:active {
