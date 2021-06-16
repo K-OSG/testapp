@@ -1,8 +1,7 @@
 import mysql.connector
 
 #DB接続
-db = mysql.connector.connect(host=['DB_HOSTNAME'], user=['DB_USERNAME'], password=['DB_PASSWORD'])
-#db = mysql.connector.connect(host="localhost", user="root", password="")
+db = mysql.connector.connect(host="localhost", user="root", password="")
 cursor = db.cursor(buffered=True)
 cursor.execute("use test_db")
 db.commit()

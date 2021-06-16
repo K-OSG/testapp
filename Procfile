@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi
+web:gunicorn time_card:app

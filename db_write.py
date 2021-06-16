@@ -1,8 +1,7 @@
 import mysql.connector
 import pandas as pd
 
-db = mysql.connector.connect(host=['DB_HOSTNAME'], user=['DB_USERNAME'], password=['DB_PASSWORD'])
-#db = mysql.connector.connect(host="localhost", user="root", password="")
+db = mysql.connector.connect(host="localhost", user="root", password="")
 cursor = db.cursor()
 cursor.execute("use test_db")
 db.commit()
